@@ -1,0 +1,22 @@
+@use "../../../../app/styles/breakpoints" as *;
+@use "../../../../app/styles/theme.scss" as *;
+
+.delete-modal {
+  margin: 0 auto;
+  max-width: 300px;
+  p {
+    font-size: 20px;
+    font-weight: 600;
+    color: $black;
+    line-height: 1.5;
+    text-align: center;
+  }
+  &__actions {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 30px;
+  }
+  @include devices(sm) {
+  }
+}
